@@ -4,29 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": true
-      }
+      "server": "212.87.190.124",
+      "server_port": 99,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6nQnSKAxCLJSZbg7KA94QA"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "94.183.170.135"
-        }
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "109.206.241.10",
+        "insecure": true
       }
     },
     {
@@ -34,7 +28,7 @@
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
       "server": "94.183.170.147",
       "server_port": 8443,
-      "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
+      "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -54,91 +48,42 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-      "server": "ee1.sferavpn.pro",
+      "server": "94.183.170.135",
       "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "109.206.241.10",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-      "server": "85.158.108.125",
-      "server_port": 9462,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
-      "server": "ee.shamanapp.online",
-      "server_port": 443,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -151,9 +96,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe"
       ]
     },
     {
@@ -165,9 +108,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
