@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 143.246.195.138
+  server: 143.246.194.60
   port: 8081
   udp: true
   type: vless
@@ -28,15 +28,6 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -46,31 +37,38 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: qq
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
   type: hysteria2
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 177.3.215.171
-  port: 443
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 143.246.195.138
+  port: 8081
   udp: true
   type: vless
-  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
-  flow: xtls-rprx-vision
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: newswedengrrrr.azadfug.ir
+  port: 7005
+  udp: true
+  type: vless
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
   tls: true
   reality-opts:
-    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
-    short-id: 7f2e9c4b1a8d6e53
-  servername: yahoo.com
-  client-fingerprint: firefox
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

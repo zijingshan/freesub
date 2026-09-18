@@ -35,21 +35,88 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "g1.haxat.bestvbest.ir",
-      "server_port": 20610,
-      "uuid": "d65a82af-a403-405e-8b7b-27a68b830511",
+      "server": "132.243.203.207",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "doctor-yab.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI",
-          "short_id": "1d1a8f9fefeff5e6"
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lives",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 06 - xiaohe",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 07 - xiaohe",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -59,7 +126,11 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 06 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 07 - xiaohe"
       ]
     },
     {
@@ -68,7 +139,11 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 06 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

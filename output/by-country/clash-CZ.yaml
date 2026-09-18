@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 172.67.166.127
+  port: 443
+  udp: true
+  type: vless
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
+  tls: true
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/qvzh31VgY6yA9AcUDaTiXVVX?ed=2560
+    headers:
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 151.101.56.7
   port: 443
   udp: true
@@ -15,9 +30,9 @@ proxies:
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 164.92.147.213
-  port: 2087
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 62.60.159.173
+  port: 433
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -27,7 +42,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /city/my?ed=2560
+    path: /info/pic?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -37,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
