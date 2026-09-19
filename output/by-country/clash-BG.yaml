@@ -5,21 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 213.183.63.60
-  port: 9049
+  server: 192.145.31.5
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 443
   udp: true
   type: vless
@@ -29,6 +24,13 @@ proxies:
     path: /
     headers:
       Host: neth9.lunariai.ru
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   server: 193.148.59.178
   port: 443
@@ -43,6 +45,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
   server: 87.120.196.212
   port: 443
   udp: true
@@ -53,16 +62,6 @@ proxies:
   servername: holo-stream.videocactus.xyz
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  server: neth9.lunariai.ru
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: edge
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
   server: 131.123.39.29
   port: 8081
@@ -73,7 +72,7 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
-  server: prep.wwwinternetvideo.click
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless

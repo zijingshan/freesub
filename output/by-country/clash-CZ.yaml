@@ -5,51 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.67.182.245
-  port: 443
+  server: 188.114.97.1
+  port: 2053
   udp: true
   type: vless
-  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
   tls: true
-  servername: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+  servername: bold-term-4edd.mbigspot.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /
     headers:
-      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+      Host: bold-term-4edd.mbigspot.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.87.59.13
+  server: 194.87.59.104
   port: 2085
   udp: true
   type: vless
-  uuid: 6687af93-eb39-47a3-9a73-0f79234ef507
+  uuid: 7b07d862-b698-47c1-884b-3e7dd6c8b862
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 64.225.65.116
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /bd/pictures?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: fast.news.gazette.help
-  port: 443
-  udp: true
-  type: hysteria2
-  password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
-  sni: cz.h2.cleanersaz.help
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
