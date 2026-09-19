@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 178.18.147.66
-  port: 29900
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.147
@@ -28,14 +28,6 @@ proxies:
   grpc-opts:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.135
   port: 443
   udp: true
@@ -44,7 +36,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -53,7 +45,8 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: ee1.sferavpn.pro
   port: 443
   udp: true
@@ -63,6 +56,18 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  server: 95.85.224.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   server: estomin1.vodniki.monster
   port: 443
@@ -76,18 +81,6 @@ proxies:
     short-id: d98e7afec9c0c359
   servername: estomin1.vodniki.monster
   client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 95.85.224.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,7 +93,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,6 +105,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 rules:
 - MATCH,PROXIES
