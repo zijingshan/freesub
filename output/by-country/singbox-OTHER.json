@@ -4,22 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.167.78",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
+      "server": "172.67.155.136",
+      "server_port": 2095,
+      "uuid": "73796e63-0000-4000-8000-000000000008",
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/sync",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
         }
       }
     },
