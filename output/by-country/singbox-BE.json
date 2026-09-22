@@ -6,28 +6,23 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "172.67.155.136",
-      "server_port": 2095,
-      "uuid": "73796e63-0000-4000-8000-000000000008",
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+      "server": "141.98.233.6",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
+      "tls": {
+        "enabled": true,
+        "server_name": "xi.tbv.ccwu.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 02 - xiaohe",
-      "server": "172.67.155.136",
-      "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
+      },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/proxyip=us.xiabibi.cf",
         "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+          "Host": "xi.tbv.ccwu.cc"
         }
       }
     },
@@ -36,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-        "🇧🇪 比利时 (Belgium) 02 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-        "🇧🇪 比利时 (Belgium) 02 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
