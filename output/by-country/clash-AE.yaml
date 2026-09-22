@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: e45762cb-9cd1-4e69-8638-9126456b79bd
+  uuid: ab3b8e51-9d1b-443a-83e0-6fea6504b44b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -40,7 +40,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.173
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
@@ -48,19 +48,32 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: bgr.accessgate.link
-  port: 2443
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 45081
   udp: true
   type: vless
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
+  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw
-    short-id: b0d8c9a285c70f6f
-  servername: unpkg.com
-  client-fingerprint: edge
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 139.185.44.42
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
+    short-id: 855834d3b002ad21
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -71,7 +84,33 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
+  port: 48948
+  udp: true
+  type: vless
+  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 39652
+  udp: true
+  type: vless
+  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -96,6 +135,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +150,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
 rules:
 - MATCH,PROXIES

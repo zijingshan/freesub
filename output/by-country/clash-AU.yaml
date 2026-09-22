@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -24,7 +24,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 34.87.244.111
   port: 443
@@ -36,7 +36,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: safari
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   server: 34.87.229.148
   port: 443
@@ -50,15 +50,42 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  server: 152.67.115.203
+  server: 172.105.169.70
   port: 443
   udp: true
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 172.105.169.70
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  server: au1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
+  server: 202.166.187.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  tls: true
+  servername: f.yoptybla.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f.yoptybla.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +96,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +108,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
