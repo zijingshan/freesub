@@ -5,25 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 172.67.221.230
-  port: 443
+  server: 160.153.168.30
+  port: 8880
   udp: true
   type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   ws-opts:
-    path: /Novan-AE9
+    path: /
     headers:
-      Host: novantunnel.tech
+      Host: vms.lifetime05.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: 5a398cfd-f7a1-4d7a-886a-6b72377f7f4f
+  uuid: ceaf462e-a9fa-4c4b-94be-f192570465a7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -37,7 +34,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
@@ -54,7 +51,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: ios
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 85.204.107.183
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
@@ -62,7 +59,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -73,19 +70,6 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: 139.185.44.42
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
-    short-id: 855834d3b002ad21
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -110,7 +94,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,6 +106,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
 rules:
 - MATCH,PROXIES
