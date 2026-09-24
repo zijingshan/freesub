@@ -16,7 +16,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇶 IQ 02 - xiaohe
   server: 193.56.135.137
   port: 9543
@@ -29,7 +29,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: random
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
