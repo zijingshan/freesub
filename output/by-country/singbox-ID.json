@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
-      "server": "45.164.20.114",
-      "server_port": 10226,
-      "uuid": "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
