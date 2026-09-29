@@ -4,18 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "104.129.164.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime40.workers.dev"
-        }
-      }
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "vless",
