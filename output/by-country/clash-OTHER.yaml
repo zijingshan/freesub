@@ -5,27 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: cctvhikvision.center
-  port: 2052
+  server: 104.18.32.87
+  port: 443
   udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  type: trojan
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  sni: id1.nathaya.web.id
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+    path: /trojan
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: cctvhikvision.center
-  port: 2052
+  server: 104.18.32.87
+  port: 443
   udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  type: trojan
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  sni: id1.nathaya.web.id
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+    path: /trojan
 proxy-groups:
 - name: PROXIES
   type: select

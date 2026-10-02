@@ -16,16 +16,14 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: ''
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 49.13.231.249
-  port: 33483
+  server: 206.1.103.221
+  port: 17721
   udp: true
-  type: vless
-  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: YdXo5FtbFp8lnDRbIvewaOaXbDtf5eR1Bk/O594+x40=:iZdLC0QQ5kSj7Y1QqwR/t23h1gp/jHyiWkf2MJFjq5s=
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 78.135.73.47
   port: 443
@@ -38,7 +36,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 151.241.226.201
   port: 2053
@@ -52,11 +50,11 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: apadana.gamingnet.ir
-  port: 33483
+  server: 176.96.131.251
+  port: 1280
   udp: true
   type: vless
-  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   network: ws
   ws-opts:
     path: /

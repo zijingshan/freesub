@@ -41,7 +41,7 @@ proxies:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
     short-id: fffff8acddadcac3
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

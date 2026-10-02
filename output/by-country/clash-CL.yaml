@@ -12,16 +12,14 @@ proxies:
   cipher: aes-256-gcm
   password: xBStBEVqvGwHPocc
 - name: 🇨🇱 智利 (Chile) 02 - xiaohe
-  server: platform103.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
+    path: /platform102
 - name: 🇨🇱 智利 (Chile) 03 - xiaohe
   server: platform107.golnamakcert.top
   port: 80
@@ -34,14 +32,16 @@ proxies:
     headers:
       Host: platform107.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 04 - xiaohe
-  server: platform102.golnamakcert.top
+  server: platform109.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 05 - xiaohe
   server: platform106.golnamakcert.top
   port: 80
@@ -54,15 +54,29 @@ proxies:
     headers:
       Host: platform106.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 06 - xiaohe
-  server: platform109.golnamakcert.top
+  server: platform103.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 07 - xiaohe
+  server: 34.176.137.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
+  tls: true
+  reality-opts:
+    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
+    short-id: 2c2d919f5183d0b7
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇨🇱 智利 (Chile) 08 - xiaohe
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -85,6 +99,7 @@ proxy-groups:
   - 🇨🇱 智利 (Chile) 05 - xiaohe
   - 🇨🇱 智利 (Chile) 06 - xiaohe
   - 🇨🇱 智利 (Chile) 07 - xiaohe
+  - 🇨🇱 智利 (Chile) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +112,6 @@ proxy-groups:
   - 🇨🇱 智利 (Chile) 05 - xiaohe
   - 🇨🇱 智利 (Chile) 06 - xiaohe
   - 🇨🇱 智利 (Chile) 07 - xiaohe
+  - 🇨🇱 智利 (Chile) 08 - xiaohe
 rules:
 - MATCH,PROXIES
