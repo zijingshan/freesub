@@ -15,9 +15,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "vless",
@@ -73,7 +73,7 @@
         "server_name": "omvpn.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
