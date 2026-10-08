@@ -12,18 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 193.233.232.96
-  port: 443
+  server: 5.254.51.109
+  port: 9443
   udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uC4W93YTVI5kbpN5ih2WZfQjikpNBn61-AhljO8ExFg
-    short-id: fa764ccf
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  type: hysteria2
+  password: Hc9_NX924RE_Mn948rgrwiub_m93V84nll
+  sni: keyhop-voxility-at.dynuddns.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
